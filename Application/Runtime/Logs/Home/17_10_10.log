@@ -1,0 +1,38 @@
+[ 2017-10-10T11:07:29+08:00 ] 127.0.0.1 /bmej/index.php?s=/Home/GoodsManage/goodsmessageajax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user_goods` [ RunTime:0.0470s ]
+SQL: SELECT * FROM `user_goods` WHERE `gid` = '123213' AND `boss_classify` = '18328710832' LIMIT 1   [ RunTime:0.0480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-10T11:22:13+08:00 ] 127.0.0.1 /bmej/index.php?s=/Home/GoodsManage/goodsmessageajax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user_goods` [ RunTime:0.0470s ]
+SQL: SELECT * FROM `user_goods` WHERE `gid` = '123' AND `boss_classify` = '18328710832' LIMIT 1   [ RunTime:0.0460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-10T11:22:28+08:00 ] 127.0.0.1 /bmej/index.php?s=/Home/GoodsManage/goodsmessageajax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user_goods` [ RunTime:0.0620s ]
+SQL: SELECT * FROM `user_goods` WHERE `gid` = '123' AND `boss_classify` = '18328710832' LIMIT 1   [ RunTime:0.0450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-10T15:33:20+08:00 ] 127.0.0.1 /bmej/index.php?s=/Home/GoodsManage/ruku_save/id/26
+ERR: SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+
+[ 2017-10-10T15:33:29+08:00 ] 127.0.0.1 /bmej/index.php?s=/Home/Super/index.html
+ERR: SQLSTATE[HY000] [2002] 套接字操作尝试一个无法连接的主机。
+
+

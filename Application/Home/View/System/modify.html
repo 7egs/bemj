@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>新增员工权限</title>
+<link rel="stylesheet" type="text/css" href="__STYLE__/css/system_modify_permissions.css">
+</head>
+
+<body style="border: 1px solid #333333">
+  <div class="top">
+  <span>新增员工权限</span>
+  <a class="x"  href="{:U('System/system')}">X</a>
+  </div>
+  <div>
+  <form action="__URL__/modify/username/{$username}" method="post">
+  <table>
+  <tr>
+  <td>会员管理：</td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" name="authority_member_jifen" value="1">充值、积分管理</td>
+  <td><input type="checkbox" name="authority_member_fenlei" value="1">分类管理</td>
+  <td><input type="checkbox" name="authority_member_add" value="1">新增会员</td>
+  <td><input type="checkbox" name="authority_member_save" value="1">修改会员信息</td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" name="authority_member_del" value="1">删除会员</td>
+  <td><input type="checkbox" name="authority_member_out" value="1">导出会员</td>
+  <td><input type="checkbox" name="authority_member_addr" value="1">导入会员</td>
+  </tr>
+  <tr>
+  <td>商品管理:</td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" name="shop_supplier" value="1">供货商管理</td>
+  <td><input type="checkbox" name="shop_fenlei" value="1">分类管理</td>
+  <td><input type="checkbox" name="shop_ruku" value="1">商品入库</td>
+  <td><input type="checkbox" name="shop_save" value="1">修改商品信息</td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" name="shop_daochu" value="1">导出商品</td>
+  <td><input type="checkbox" name="shop_daoru" value="1">导入商品</td>
+  </tr>
+  <tr>
+  <td>订单管理：</td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" name="authority_order" value="1">订单管理</td>
+  </tr>
+  </table>
+  <div class="c">
+	<a href="" style = "width: 115px;height: 35px;font-size: 24px;border: 1px solid #333333;background: #8c8c8c; display: inline-block;text-align: center;line-height: 35px; text-decoration: none;color: #333333;">重置</a>
+    <input type="submit" value="新增" class="in2">
+    </div>
+  </form>
+  </div>
+</body>
+</html>
+

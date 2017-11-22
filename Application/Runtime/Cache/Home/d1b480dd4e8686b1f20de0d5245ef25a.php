@@ -1,0 +1,89 @@
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>商品管理</title>
+<link rel="stylesheet" type="text/css" href="/bmej/Public/home/css/management.css">
+<script src="/bmej/Public/home/js/jquery-3.2.1.min.js"></script>
+<?php  if(!$catch){ echo "<script>alert('今天或者当天没有入库数据');</script>"; } ?>
+</head>
+<body>
+  <div class="main" style="height: 500px;overflow-x: hidden;font-size: 12px;">
+    <table width="100%" height="80" border="0" cellpadding="0" cellspacing="0" id="table1">
+      <tr>
+        <th width="107" align="center" valign="bottom" scope="col">商品条码</th>
+        <th width="84" align="center" valign="bottom" scope="col">商品名称</th>
+        <th width="49" align="center" valign="bottom" scope="col">规格</th>
+        <th width="54" align="center" valign="bottom" scope="col">单位</th>
+        <th width="65" align="center" valign="bottom" scope="col">进货价</th>
+        <th width="68" align="center" valign="bottom" scope="col">销售价</th>
+        <th width="66" align="center" valign="bottom" scope="col">进货量</th>
+        <th width="66" align="center" valign="bottom" scope="col">入库时间</th> <th width="72" align="center" valign="bottom" scope="col">操作</th>
+      </tr>
+      <?php if(is_array($catch)): $i = 0; $__LIST__ = $catch;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+        <td align="center" valign="middle"><?php echo ($vo["gid"]); ?></td>
+        <td align="center" valign="middle"><?php echo ($vo["gname"]); ?></td>
+        <td align="center" valign="middle"><?php echo ($vo["guige"]); ?></td>
+        <td align="center" valign="middle"><?php echo ($vo["unit"]); ?></td>
+        <td align="center" valign="middle"><?php echo ($vo["gbid"]); ?></td>
+        <td align="center" valign="middle"><?php echo ($vo["gsale"]); ?></td>
+        <td align="center" valign="middle"><?php echo ($vo["gnum"]); ?></td>
+        <td align="center" valign="middle"><?php echo date("Y-m-d H:i:s",$vo["date"]) ?></td>
+        <td align="center" valign="middle"><a href="/bmej/index.php?s=/Home/GoodsManage/ruku_save/id/<?php echo ($vo["id"]); ?>">修改</a></td>
+      </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+    </table>
+    </div>  
+    <!--尾部-->
+    <div class="footer" style="height: 100px">
+     <div class="sales">
+      <div class="sp">
+      <div>
+          商品条码
+         <input type="text" class="form-control" name="gid" id='searchval'/>
+         <input type="button" value="查询" id='goodssearch' style="width: 80px;height: 30px;display: inline-block;"/>
+                <a style="float: right;display: inline-block;width: 100px;height: 40px;background: #8cd121;margin-right:5px;border-radius: 10px;line-height: 40px;text-align: center;color: #ffffff;margin-top: 10px;" href="javascript:history.back(-1)">返回</a> 
+      </div>          
+       </div>  
+        </div>
+        <div class="time">
+         <form action='' method='post'>
+          <span>开始时间：</span>
+          <input type="text" class="demo-input" placeholder="请选择日期" id="test1" name="start_time">         
+          <span>结束时间：</span>
+          <input type="text" class="demo-input" placeholder="请选择日期" id="test" name="end_time">         
+          <input type="submit" value="查询"/>
+          </form>
+         </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="/bmej/Public/home//js/layDate-v5.0.5/laydate/laydate.js"></script> 
+<script type="text/javascript">
+  //查询商品
+  window.onload=function(){
+    var a=document.getElementById("table1");
+    var b=document.getElementById("searchval");
+    document.getElementById('goodssearch').onclick=function(){
+     for(var i=1;i<a.rows.length+1;i++){
+        var str1=a.rows[i].cells[0].innerHTML;
+        var str2=b.value;
+        if(str1==str2){
+          a.rows[i].style.display='table-row';
+        }
+        else{
+          a.rows[i].style.display='none';
+        }
+     }
+    }
+lay('#version').html('-v'+ laydate.v);
+//执行一个laydate实例
+laydate.render({
+elem: '#test1' //指定元素
+});
+lay('#version').html('-v'+ laydate.v);
+//执行一个laydate实例
+laydate.render({
+elem: '#test' //指定元素
+});
+   }
+</script>

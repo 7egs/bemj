@@ -1,0 +1,63 @@
+[ 2017-10-07T17:21:08+08:00 ] 127.0.0.1 /bmej/index.php?s=/Home/GoodsManage/goodsmessageajax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user_goods` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `user_goods` WHERE `gid` = ' ' AND `boss_classify` = '18328710832' LIMIT 1   [ RunTime:0.0430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-07T17:55:25+08:00 ] 127.0.0.1 /bmej/index.php?s=/Home/GoodsManage/goodsmessageajax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user_goods` [ RunTime:0.0400s ]
+SQL: SELECT * FROM `user_goods` WHERE `gid` = '123123123' AND `boss_classify` = '18328710832' LIMIT 1   [ RunTime:0.0550s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-10-07T17:55:54+08:00 ] 127.0.0.1 /bmej/index.php?s=/Home/GoodsManage/goodsmessageajax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user_goods` [ RunTime:0.0380s ]
+SQL: SELECT * FROM `user_goods` WHERE `gid` = '12312' AND `boss_classify` = '18328710832' LIMIT 1   [ RunTime:0.0390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-07T17:56:29+08:00 ] 127.0.0.1 /bmej/index.php?s=/Home/GoodsManage/goodsmessageajax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user_goods` [ RunTime:0.0472s ]
+SQL: SELECT * FROM `user_goods` WHERE `gid` = '21313' AND `boss_classify` = '18328710832' LIMIT 1   [ RunTime:0.0372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-07T18:00:02+08:00 ] 127.0.0.1 /bmej/index.php?s=/Home/GoodsManage/goodsmessageajax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user_goods` [ RunTime:0.0356s ]
+SQL: SELECT * FROM `user_goods` WHERE `gid` = '213213' AND `boss_classify` = '18328710832' LIMIT 1   [ RunTime:0.0312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-07T18:00:11+08:00 ] 127.0.0.1 /bmej/index.php?s=/Home/GoodsManage/goodsstorehouse2.html
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'state' cannot be null
+
+[ 2017-10-07T18:01:47+08:00 ] 127.0.0.1 /bmej/index.php?s=/Home/GoodsManage/goodsmessageajax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user_goods` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `user_goods` WHERE `gid` = '123123' AND `boss_classify` = '18328710832' LIMIT 1   [ RunTime:0.0468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

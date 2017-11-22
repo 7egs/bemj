@@ -1,0 +1,246 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+a{ text-decoration:none; color:#000;}
+#member{ width:100%; height:400px; border-bottom:1px solid #999; background:#dcdddd;}
+#member table{ color: #000; font-size: 14px; border:1px solid #666; border-collapse:collapse;}
+#member table tr th{ color:#000; border:1px solid #666;}
+#member table tr td{ border:1px solid #666;}
+
+.rows{
+    display:inline-block;
+	margin-left:1%	;
+}
+.prev{
+    display:inline-block;
+	margin-left:2%;
+}
+.num{
+    display:inline-block;
+	margin-left:2%	;
+}
+.next{
+    display:inline-block;
+	margin-left:2%	;
+}
+.current{
+	margin-left:2%	;	
+}
+.member_footer{
+	width:100%;
+	height:160px;
+}
+.member_footer>div{
+	width:100%;
+	height:60px;
+	padding-top:20px;	
+}
+.member_footer {
+	margin-left:40px;
+	float:left;
+}
+.member_footer  input[type='text']{
+	width:330px;
+	height:32px;
+	background:#dcdddd;
+	border:1px;
+	font-size:20px;
+}
+.member_footer  input[type='button']{
+	width:100px;
+	height:36px;
+	margin-left:5px;
+}
+.member_footer>div>p{
+	float:right;
+	margin-right:70px;
+	text-align: center;
+}
+.member_footer>div>p>button{
+	width:70px;
+	height:24px;
+	background:#dcdddd;
+	margin-left:5px;
+	border:1px solid #dcdddd;
+	text-align: center;
+}
+.member_footer>p>span{
+	width:45px;
+	height:20px;
+	display: inline-block;
+	border:1px solid #dcdddd;
+	margin-right:10px;
+}
+.member_footer>ul{
+	list-style: none;
+	width:100%;
+	height:60px;
+}
+.member_footer>ul li{
+	width: 140px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    background: #8cd121;
+    margin-left: 42px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+/*充值、积分管理*/
+
+#rech a{
+	color:#000;
+	text-decoration:none;
+	}
+#cation a{
+	text-decoration:none;
+	color:#000;}
+#score_manage{
+	width:700px;
+	height:560px;
+	background:#dcdddd;
+	border:1px solid #999;
+	position:fixed;
+	top:2%; left:5%;
+	display:none;
+}
+
+#score_manage h6{
+	width:100%;
+	height:30px;
+	background:#8cd121;
+	font-size:16px;
+	line-height: 30px;
+	cursor:pointer;
+}
+#score_manage h6 span{
+	float:right;
+	width:30px;
+	height:30px;
+	text-align: center;
+	font-size: 30px;
+}
+#score_manage .content{
+	width:610px;
+	margin-left:55px;
+	padding-top:20px;
+}
+#score_manage .content  span{
+	color:#000;
+	font-weight: bold;
+}
+#score_manage .content  input{
+	width:410px;
+	height:30px;
+	background:#dcdddd;
+	border:1px #7C7D7C solid;
+}
+#score_manage .content .show{ width:100%; height:100px;}
+#score_manage .content .show p{ width:50%; height:40px; float:left;}
+#score_manage .content button{
+	width:85px;
+	height:30px;
+	margin-left:20px;
+}
+#score_manage .content_left{
+	width:50%;
+	float:left;
+}
+#score_manage .content_right{
+	width:50%;
+	float:left;
+}
+#score_manage .pay{
+	width:280px;
+	height:340px;
+	background: #D2D2D2;
+	border:1px solid #9D9D9D;
+	padding-left:10px;
+}
+#score_manage .pay ul{
+	list-style: none;
+	margin-top:20px;
+}
+#score_manage .pay ul li{
+	width:190px;
+	height:40px;
+}
+#score_manage .pay ul li select{
+	width:145px;
+	height:30px;
+}
+#score_manage .pay ul li input{
+	width:125px;
+	height:30px;
+}
+#score_manage .content_right .pay ul li input{
+	width:110px;
+}
+#score_manage .pay ul li:nth-of-type(3){
+	text-indent: 15px;
+}
+#score_manage .pay input[type='submit']{
+	width:155px;
+	height:60px;
+	display: block;
+	margin-left:30px;
+	font-size:20px;
+}
+#score_manage .pay button:nth-of-type(2){
+	margin-top:20px;
+}
+#score_manage .content>div>p{
+	line-height: 50px;
+}
+
+/*分类管理*/
+#main{ width:55%; height:484px; margin:5% auto; border:1px solid #999; background:#dcdddd; display:none; position:fixed; top:1%; left:25%;}
+#main .top{ width:100%; height:35px; background:#8cd121;}
+#main .top{ width:100%; height:30px; background:#8cd121; position:relative;}
+#main .top span{ font-size:20px; color:#000; margin:10px 15px;}
+.end{ color:#000; font-size:24px; margin:0px; width:25px; height:25px; line-height:25px; text-align:center; position:absolute; top:0px; right:0px; cursor:pointer;}
+#main .mname{ width:100%; height:100px;}
+.mname form{ width:100%; height:50px; padding-left:10px; margin-top:30px; position:relative;}
+.mname form input[type=text]{ width:245px; height:30px; background:#d2d2d2; border:1px solid #999; margin:5px 5px; padding-left:5px;}
+.mname form input[type=submit]{ width:100px; height:70px; background:#d2d2d2; border:1px solid #999; font-size:30px; border:1px solid #999; margin-left:20px; position:absolute; right:3%; top:5px;}
+#bg{ width:99.5%; height:322px; border:1px solid #CCC;}
+#bg table{ color: #000; border:1px solid #666; border-collapse:collapse;}
+#bg table tr th{ font-size: 16px; border:1px solid #666;}
+#bg table tr td{ font-size: 14px; border:1px solid #666;}
+
+
+/*新增会员*/
+#gement{ width:480px; height:410px; border:1px solid #999; background:#dcdddd; position:fixed; top:10%; left:30%; display:none;}
+#gement .top{ width:100%; height:35px; background:#8cd121;}
+#gement .top{ width:100%; height:30px; background:#8cd121; position:relative;}
+#gement .top span{ font-size:20px; color:#000; margin:10px 15px;}
+.ead{ color:#000; font-size:24px; margin:0px; width:25px; height:25px; line-height:25px; text-align:center; position:absolute; top:0px; right:0px; cursor:pointer;}
+#gement input{ width:180px; height:32px; padding-left:5px; background:#d2d2d2; border:1px solid #999;}
+#gement table{ margin-top:5px;}
+#gement select{ width:187px; height:32px; padding-left:5px; font-size:18px; background:#d2d2d2; border:1px solid #999;}
+#gement input[type=submit]{ font-size:24px; width:120px; height:60px; border:1px solid #999; background:#d2d2d2;}
+#gement input[type=reset]{ font-size:24px; width:120px; height:60px; border:1px solid #999; background:#d2d2d2;}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+::-webkit-scrollbar  
+{  
+    width: 10px;  
+    height: 10px;  
+    background-color: #8cd121;  
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+::-webkit-scrollbar-track  
+{  
+    -webkit-box-shadow: inset 0 0 6px #8cd121;  
+    background-color: #8cd121;  
+}  
+  
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb  
+{  
+    -webkit-box-shadow: inset 0 0 6px #8cd121;  
+    background-color: #8cd121;  
+}  

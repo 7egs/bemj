@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>总库有窗口</title>
+</head>
+<style>
+table{
+	text-align:center;
+}
+</style>
+<body>
+
+       <div class=""> 
+         <a style = "cursor:pointer;color:blue;" onclick ="window.history.back();">返回商品管理</a>
+            <table width='100%' border="1" cellspacing="0" cellpadding="0" >
+              <tr>
+                <th >商品条码</th>
+                <th >商品名称</th>
+                <th >商品进价</th>
+                <th >商品售价</th>
+                <th >商品个数</th>
+              </tr>
+              <volist name='data' id="vol">
+              <tr>
+              	<td >{$vol.gid}</td>
+                <td >{$vol.gname}</td>
+                <td >{$vol.gbid}</td>
+                <td >{$vol.gsale}</td>
+                <td >{$vol.num}</td>
+                </tr>
+              </volist>
+           </table>
+       </div>
+     <div>
+	     <span>总计:{$list.order_money}</span>&nbsp;&nbsp;&nbsp;
+	     <span>操作人员:{$list.username}</span>&nbsp;&nbsp;&nbsp;
+	     <span>订单时间:{$list.date|date='Y-m-d H:i:s',###}</span>
+     </div>
+</body>
+<script>
+
+
+
+</script>
+</html>

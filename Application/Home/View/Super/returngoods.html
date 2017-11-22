@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>退货</title>
+<link rel="stylesheet" type="text/css" href="__STYLE__/css/purchase.css">
+</head>
+<body>
+ <div class="main">
+   <div class="top">
+请输入退货数量   
+   </div>
+   <form action="__URL__/goodsreturnresult/gid/{$data['gid']}" method="post">
+           <input type="text" name='num'/><br>
+     <input type="submit" value="确认"/>
+     <a href="{:U('index')}">返回</a>
+   </form>
+ </div>
+</body>
+</html>

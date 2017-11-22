@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>新增员工</title>
+<link rel="stylesheet" type="text/css" href="__STYLE__/css/system_newly_increased.css">
+</head>
+<body style="border: 1px solid #333333">
+  <div class="top">
+  <span >新增员工</span>
+  <a class="x"  href="{:U('System/system')}">X</a>
+  </div>
+  <div class="a">
+  <form action="{:U('System/add')}" method="post">
+  <table>
+	  <tr>
+		  <td class="f">员工电话：</td>
+		  <td><input type="text" name="username" value="{$username}" class="i" placeholder = "请输入员工手机号码"></td>
+		  <td style = "color:red;">*</td>
+	  </tr>
+	  <tr>
+		  <td class="f">登录密码：</td>
+		  <td><input type="password" name="password" value="{$password}" class="i" placeholder = "请输入5到18个字符"></td>
+		  <td style = "color:red;">*</td>
+	  </tr>
+	  <tr>
+		  <td class="f">姓名：</td>
+		  <td><input type="text" name="home_name" value="{$home_name}" class="i" placeholder = "请输入员工姓名"></td>
+		  <td style = "color:red;">*</td>
+	  </tr>
+	  <tr>
+		  <td class="f">地址：</td>
+		  <td><input type="text" name="address" value="{$address}" class="i" placeholder = "请输入员工住址"></td>
+	  </tr>
+	  <tr>
+		  <td class="f">身份证：</td>
+		  <td><input type="text" name="identification" value="{$identification}" class="i" placeholder = "请输入员工18位身份证号码"></td>
+		  <td style = "color:red;">*</td>
+		  
+	  </tr>
+	  <tr>
+		  <td class="f">底薪：</td>
+		  <td><input type="text" name="base_pay" value="{$base_pay}" class="i" placeholder = "请输入员工底薪"></td>
+	  </tr>
+	  <tr>
+		  <td class="f">性别：</td>
+		  <!--<td><input type="text" name="sex" value="{$sex}" class="i" placeholder = "请输入性别"></td>-->
+		  <td>
+		  <select name="sex" class="i" placeholder = "请输入性别" style = "width:219px; height:41px;">
+                   <option value ="男">男</option>
+                   <option value ="女">女</option>
+          </select>		  
+		  </td>
+	  </tr>
+	  <tr>
+		  <td class="f">是否启用：</td>
+		  <td><input type="radio" name="status" value="是" checked><span>是</span><input type="radio" name="status" value="否" class="z"><span>否</span></td>
+	  </tr>	  
+  </table>
+  	  <div class="c">
+		<a href="" class="in1">重置</a>
+		<input type="submit" value="新增" class="in2">
+	  </div>
+  </form>
+  </div>
+</body>
+</html>
+

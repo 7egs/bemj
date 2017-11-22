@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>修改数量窗口</title>
+<link rel="stylesheet" type="text/css" href="__STYLE__/css/purchase.css">
+</head>
+<body>
+ <div class="main" style="height:500px">
+   <div class="top">     
+   </div>
+   <form action="__URL__/updatesupplier/id/{$list['id']}" method="post">
+      供应商名字: <input type="text" name='suppliername' value="{$list['supplier_name']}"/><br>
+      联系人: <input type="text" name='suppliermen' value="{$list['supplier_men']}"/><br>
+      联系人电话: <input type="text" name='supplierphone' value="{$list['supplier_phone']}"/><br>
+      联系人地址: <input type="text" name='supplieraddr' value="{$list['addr']}"/><br>
+      是否启用: <select name='supplierstatus'>
+      <option value='1'>启用</option>
+      <option value='0'>禁用</option>
+      </select>
+     <input type="submit" value="确认修改"/>
+     <a href="{:U('goodsmanageshow')}">返回</a>
+   </form>
+ </div>
+</body>
+</html>

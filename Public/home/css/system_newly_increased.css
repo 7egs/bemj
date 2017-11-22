@@ -1,0 +1,93 @@
+/* CSS Document */
+
+body{
+	width: 377px;
+	height: 492px;
+}
+.a{
+	width:377px;
+	height: 464px;
+	margin-top:15px;
+}
+
+.c{
+	position:absolute;
+	top:405px;
+}
+.f{
+	color:#000000;
+	font-family:"微软雅黑";
+	font-size:16px
+}
+
+.i{
+	width: 205px;
+	height: 27px;
+    padding:5px;
+}
+.in1{
+	width: 113px;
+	height: 39px;
+	font-family:"微软雅黑";
+	font-size:24px;
+    border: 2px solid #333333;
+    box-sizing:border-box;
+	text-decoration:none;
+    display: inline-block;
+	line-height:30px;
+	text-align:center;
+    margin-left: 20px;
+    color:#fff;
+    background:#8cd121;
+    
+}
+.in2{
+	width: 113px;
+	height: 39px;
+	font-family:"微软雅黑";
+	font-size:24px;
+	margin-left:111px;
+}
+.z{
+	margin-left:58px;
+}
+table{
+	margin:0px auto;
+}
+.top{
+	background:#8cd121;
+	width: 377px;
+	height: 30px;
+	line-height:30px;
+}
+.top>span{ 
+	font-size:20px;
+	color:#000; 
+	margin:9px 15px;
+}
+.x{
+	border-style:none;
+	margin-left: 247px;
+ 	text-decoration:none; 
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+::-webkit-scrollbar  
+{  
+    width: 10px;  
+    height: 10px;  
+    background-color: #8cd121;  
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+::-webkit-scrollbar-track  
+{  
+    -webkit-box-shadow: inset 0 0 6px #8cd121;  
+    background-color: #8cd121;  
+}  
+  
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb  
+{  
+    -webkit-box-shadow: inset 0 0 6px #8cd121;  
+    background-color: #8cd121;  
+}  

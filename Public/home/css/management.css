@@ -1,0 +1,128 @@
+/* CSS Document */
+body,p,h1,h2,h3,h4,h5,h6{ color:#333; font-family:"微软雅黑"; padding:0px; margin:0px;}
+a{ text-decoration:none;}
+ul,li{ color:#333; padding:0px; margin:0px; list-style:none;}
+span,a,p{ color:#333;}
+
+
+.main{ width:100%; height:500px; background:#dcdddd;}
+.main table tr td{ height:25px; color:#333; border:1px solid #999; border-left:1px solid #CCC;}
+.main table tr th{ height:25px; color:#333; border:1px solid #000; border-top:0px solid #CCC; border-left:0px solid #CCC; text-align:center;}
+.footer{ width:100%; height:200px; border-top:2px solid #999; background:#FFF;}
+.footer .sales{ width:100%; height:35px;}
+.footer .sales .sp{ margin-left:30px;}
+.footer .sales form{ width:100%; height:35px; float:left; margin-top:10px;}
+.footer .sales form{ clear:both;}
+.footer .sales .flip{ width:300px; height:35px; float:right;}
+.footer .sales .flip{ clear:both;}
+.footer .sales .flip input[type=text]{ width:30px; text-align:center;}
+.footer .sales .flip input[type=submit]{ margin-left:20px; border:0px; border:1px solid #999;font-size:16px;}
+.footer .sales select{ width:100px; height:26px; line-height:30px; background:#cccccc;}
+.footer .sales select ,option{ font-size:16px;}
+.footer .sales input[type=text]{ width:220px; height:26px; padding-left:5px;}
+.footer .sales input[type=submit]{ width:70px; height:30px;  background:#cccccc; border:1px solid #999;font-size:16px;}
+.footer >.time{ width:750px; height:30px; margin-top:15px;}
+.footer >.time >form >span{ margin-left:28px;}
+.footer >.time >form{ line-height:30px;}
+.footer >.time >form >input[type=text]{ width:180px; height:30px; background:#cccccc; border:1px solid #999; font-size:16px;}
+.footer >.time >form >input[type=submit]{ width:70px; height:33px;}
+.footer >ul{ width:900px; height:85px; margin:0 auto; margin-top:15px;}
+.footer >ul >li{ width:175px; height:38px; border:1px solid #666; float:left; border-radius:10px; margin:1px; background:#cccccc; text-align:center;}
+.footer >ul >li >a{ color:#000; font-size:18px; line-height:38px;}
+.footer >ul >li >input{ font-size:18px; width:175px; height:38px; float:left; border-radius:10px; background:#cccccc; text-align:center;}
+#warehou span{ color:#000; font-size:18px; line-height:37px;}
+#suppli span{ color:#000; font-size:18px; line-height:37px;}
+#fenl span{ color:#000; font-size:18px; line-height:37px;}
+#addto span{ color:#000; font-size:18px; line-height:37px;}
+/*商品入库弹出框*/
+#amain{ width:95%; height:655px; margin:0 auto; border:1px solid #999; background:#dcdddd; position:fixed; top:0px; left:3%; display:none;}
+#amain .top{ width:100%; height:35px; background:#8cd121;}
+#amain .top{ width:100%; height:30px; background:#8cd121; position:relative;}
+#amain .top span{ font-size:20px; color:#000; margin:10px 15px;}
+.erd{ color:#000; font-size:24px; margin:0px; width:25px; height:25px; line-height:25px; text-align:center; position:absolute; top:0px; right:0px; cursor:pointer;}
+#amain form input{ width:280px; height:25px; padding-left:5px;}
+#amain form select{ width:289px; height:30px;}
+#amain form input[type=submit]{ width:160px; height:60px; background:#8c8c8c; border:1px solid #999; border-radius:10px; font-size:28px;}
+
+/*供应商管理弹出框*/
+#bmain{ width:80%; height:655px; border:1px solid #999; margin:0 auto; background:#dcdddd; position:fixed; top:0px; left:10%; display:none;}
+#bmain .top{ width:100%; height:35px; background:#8cd121;}
+#bmain .top{ width:100%; height:30px; background:#8cd121; position:relative;}
+#bmain .top span{ font-size:20px; color:#000; margin:10px 15px;}
+.end{ color:#000; font-size:24px; margin:0px; width:25px; height:25px; line-height:25px; text-align:center; position:absolute; top:0px; right:0px; cursor:pointer;}
+#bmain .naw table input{ width:250px; height:25px; padding-left:5px;}
+#text{ width:696px; height:25px;}
+#bmain .naw table input[type=submit]{ font-size:24px; width:145px; height:45px; border:1px solid #999; background:#8c8c8c; border-radius:10px;}
+#sub{ margin-left:50px;}
+#bmain .but{ width:100%; height:245px;}
+#bmain .but table{ color: #000; font-size: 14px; border:1px solid #666; border-collapse:collapse;}
+#bmain .but table tr th{ color:#000; border:1px solid #666;}
+#bmain .but table tr td{ border:1px solid #666;}
+#bmain .flip{width:250px; height:35px; margin-right:50px; float:right;}
+#bmain .flip{ clear:both;}
+#bmain .flip input[type=text]{ width:45px; height:22px; text-align:center;}
+#bmain .flip input[type=submit]{ margin-left:20px; background:#cccccc; border:1px solid #999;font-size:16px; margin-top:10px;}
+
+/*分类管理弹出框*/
+#cmain{ width:50%; height:484px; margin:5% auto; border:1px solid #999; background:#dcdddd; position:fixed; top:0px; left:25%; display:none;}
+#cmain .top{ width:100%; height:35px; background:#8cd121;}
+#cmain .top{ width:100%; height:30px; background:#8cd121; position:relative;}
+#cmain .top span{ font-size:20px; color:#000; margin:10px 15px;}
+.ebd{ color:#000; font-size:24px; margin:0px; width:25px; height:25px; line-height:25px; text-align:center; position:absolute; top:0px; right:0px; cursor:pointer;}
+#cmain .mname{ width:100%; height:100px;}
+#cmain .mname form{ width:100%; height:50px; padding-left:10px; margin-top:50px;}
+#cmain .mname form input[type=text]{ width:245px; height:30px; margin-left:20px; padding-left:5px;}
+#cmain .mname form input[type=submit]{ width:150px; height:45px; background:#8c8c8c; font-size:30px; border-radius:11px; border:1px solid #999; margin-left:20px;}
+#cmain .bg{ width:100%; height:250px; border:1px solid #CCC;}
+#cmain table{ color: #000; font-size: 14px; border:1px solid #666; border-collapse:collapse;}
+#cmain table tr th{ border:1px solid #666;}
+#cmain table tr td{ border:1px solid #666;}
+#cmain .flip{width:250px; height:35px; float:right;}
+#cmain .flip{ clear:both;}
+#cmain .flip input[type=text]{ width:45px; height:22px; text-align:center;}
+#cmain .flip input[type=submit]{ margin-left:20px; background:#cccccc; border:1px solid #999;font-size:16px; margin-top:10px;}
+/*商品添加弹出框*/
+#dmain{ width:80%; height:655px; border:1px solid #999; margin:0 auto; background:#dcdddd; position:fixed; top:0px; left:10%; display:none;}
+#dmain .top{ width:100%; height:35px; background:#8cd121; position:relative;}
+#dmain .top span{ font-size:20px; color:#000; margin:10px 15px;}
+.ewd{ color:#000; font-size:24px; margin:0px; width:25px; height:25px; line-height:25px; text-align:center; position:absolute; top:0px; right:0px; cursor:pointer;}
+#dmain .add{ width:100%; height:620px; }
+#dmain .add table{ width:100%; height:400px; }
+#dmain .add input[type=text]{ width:250px; height:30px; border:1px solid #999; padding-left:5px; background:#dcdddd;}
+#dmain .add select{ width:260px; height:35px;  background:#dcdddd;}
+#dmain .other{width:100%;height:150px;}
+#dmain .other .other-left{width:50%;height:100%;float:left;}
+#dmain .other .other-right{width:50%;height:100%;float:right;}
+#dmain .other p{height:50px;}
+#dmain .other .other-left p{margin-left:130px;}
+#dmain .other span{width:130px;display: block;float:right;}
+#dmain .other .other-right span{margin-right:40px;}
+#dmain .button{width:100%;height:42px;}
+#dmain .button input{ font-size:24px;width:150px;height:40px;border:1px solid #999;border-radius: 5px;margin-left:250px;}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+::-webkit-scrollbar  
+{  
+    width: 10px;  
+    height: 10px;  
+    background-color: #8cd121;  
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+::-webkit-scrollbar-track  
+{  
+    -webkit-box-shadow: inset 0 0 6px #8cd121;  
+    background-color: #8cd121;  
+}  
+  
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb  
+{  
+    -webkit-box-shadow: inset 0 0 6px #8cd121;  
+    background-color: #8cd121;  
+}  
+
+
+
+
+
+

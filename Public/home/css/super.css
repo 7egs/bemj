@@ -1,0 +1,155 @@
+/* CSS Document */
+
+body,p,h1,h2,h3,h4,h5,h6{ color:#FFF; padding:0px; margin:0px;}
+a{ text-decoration:none;}
+ul,li{ padding:0px; margin:0px; list-style:none;}
+table,tr,td,th{ color:#333; font-family:"微软雅黑"; font-size:16px; font-weight:500;}
+
+.main{ width:100%; height:400px; background:#FFF;}
+.main table tr td{ width:180px; height:25px; color:#333; border:1px solid #999; border-left:1px solid #CCC; font-weight:400;}
+.main table tr th{ width:180px; height:25px; color:#666; border:1px solid #000; border-top:0px solid #CCC; border-left:0px solid #CCC; text-align:center; font-weight:400;}
+
+.footer{ width:100%; height:200px; border-top:2px solid #999; background:#FFF;box-sizing:border-box;}
+.footer .sales{ width:350px; height:170px; float:left; margin:20px 20px;}
+.footer .sales{ clear:both;}
+.footer .sales select{ width:73px; height:26px; line-height:30px;}
+.footer .sales span{ margin-left:40px; letter-spacing:2px; line-height:80px;}
+.footer .sales input{ width:250px; height:26px; border:1px solid #000; padding-left:5px;}
+.footer .sales .wum{ width:280px; height:30px; margin-top:24px; margin-left:10px;}
+.footer .sales .wum span{ margin:0px; top:85px; left:32px;}
+.footer .sales .wum input{width:160px; height:26px; border:1px solid #000; padding-left:10px;}
+.footer .cust{ width:335px; height:115px; border:1px solid #000; margin:20px 0px;}
+.footer .cust .remove{ width:100%; height:40px; border-bottom:1px solid #000;}
+.footer .cust .remove input{ width:78px; height:30px; float:right; background:#8cd121; margin-top:4px; margin-right:4px; border:0px; }
+
+.footer .cust ul li{ width:110px; height:73px; border-left:1px solid #000; float:left;}
+.footer .cust ul li:nth-of-type(1){ border-left:1px solid #CCC;}
+.footer .cust ul li h4{ color:#000; text-align:center; font-size:14px; margin-top:10px;}
+.footer .cust ul li h5{ color:#33F; text-align:center; margin-top:8px;}
+.footer .psyment{ width:350px; height:170px; float:right; margin-top:10px; margin-right:20px;}
+.footer .psyment .payleft{ width:170px; height:100%; float:left;}
+.footer .psyment .payleft{ clear:both;}
+.footer .psyment .payleft p{width:150px; height:40px; background:#8cd121; margin:15px 5px;}
+.footer .psyment .payleft a{ margin-left:40px; line-height:40px; color:#000; text-decoration:none;}
+.footer .psyment .payright{ width:170px; height:100%; float:right;}
+.footer .psyment .payright input{ color:#000; width:150px; height:40px; background:#8cd121; margin-left:10px; margin-top:5px;}
+.footer .psyment .payright input[type=submit]{ font-size:16px;}
+.footer .psyment .payright a{color:#000; text-decoration:none;}
+
+#content{ width:540px; height:385px; margin:10% auto;  border:1px solid #666; background:#dcdddd; position:fixed; top:5%; left:25%; display:none; cursor:pointer;}
+#content > .top{ width:100%; height:27px; background:#8cd121; position:relative;}
+.cuo{ color:#000; font-size:24px; margin:0px; width:25px; height:25px; text-align:center; position:absolute; top:0px; right:0px; cursor:pointer;}
+#content > .top > span{ color:#000; margin:10px 5px;}
+#content table { color: #000; font-size: 14px; border:1px solid #999; border-collapse:collapse;}
+#content table tr th { border:1px solid #999;}
+#content table tr td{ border:1px solid #999;}
+#content > .bottom{ width:100%; height:65px; background:#FFF; position:absolute; bottom:0px; left:0px;}
+#content > .bottom > input[type=text]{ width:45px; height:25px; text-align:center; margin-left:450px; margin-top:20px;}
+#content > .bottom > input[type=submit]{ width:65px; height:30px; background:#cccccc; border:0px; margin-left:10px;}
+/*快捷键F2*/
+
+#conter{ width:570px; height:485px; margin:6% auto;  border:1px solid #666; background:#dcdddd; position:fixed; top:5%; left:25%; display:none;}
+#conter > .tow{ width:100%; height:27px; background:#8cd121; position:relative;}
+.err{ color:#000; font-size:24px; margin:0px; width:25px; height:25px; line-height:25px; text-align:center; position:absolute; top:0px; right:0px; cursor:pointer;}
+#conter .tow > span{ font-size:20px; color:#000; margin:10px 15px;}
+#conter .tow > form{ width:100%; height:385px;}
+#conter .tow >  .odd{ width:100%; height:150px;}
+#conter .tow >  .odd span{ color:#000; font-size:18px; margin-left:30px;} 
+#conter .tow .odd input{ width:255px; height:25px; margin-top:50px;} 
+#conter .tow .odd input[type=button]{ font-size:24px; width:150px; height:48px; margin-left:20px; border-radius:10px; border:1px solid #999; background:#8c8c8c;}
+#conter > .tow > table { color: #000; font-size: 14px; border:1px solid #666; border-collapse:collapse;}
+#conter > .tow > table tr td{ border:1px solid #666;}
+#conter > .tow > table tr th{ border:1px solid #666;}
+#conter > .tow > .botton{ width:100%; height:40px; margin-top:30px; }
+#conter > .tow > .botton > input[type=text]{ width:45px; height:22px; margin-left:350px; border:1px solid#666; text-align:center;}
+#conter > .tow > .botton > input[type=submit]{ width:79px; height:26px; background:#cccccc; border:1px solid#666; margin-left:10px;}
+
+/*快捷键F3*/
+
+#contei{ width:750px; height:550px; margin:1% auto;  border:1px solid #666; background:#dcdddd; display:none; position:fixed; top:0px; left:2%;}
+#contei > .three{ width:100%; height:27px; background:#8cd121;}
+.erd{ color:#000; font-size:24px; margin:0px; width:25px; height:25px; line-height:25px; text-align:center; position:absolute; top:0px; right:0px; cursor:pointer; overflow-x:hidden;}
+#contei > .three span{ font-size:20px; color:#000; margin:10px 15px;}
+#contei > .three > .rmain{ width:98%; height:353px; margin:5px auto;}
+#contei > .three > .rmain .left{ width:243px; height:353px; float:left; clear:both;}
+#contei > .three > .rmain .left .ltop{ width:240px; height:140px; border:1px solid #999; background:#cccccc;}
+#contei > .three > .rmain .left ul{ width:240px; height:92px; background:#cccccc; margin-top:10px; border:1px solid #999;}
+#contei > .three > .rmain .left ul h1{ color:#000; font-size:24px; font-weight:500; margin:13px 20px;}
+#contei > .three > .rmain .left p{ width:240px; height:92px; border:1px solid #999; margin-top:12px; background:#cccccc;}
+#contei > .three > .rmain .left p span{ line-height:42px; margin-left:20px;}
+
+#contei > .number{ width:600px; height:145px; position:absolute; bottom:10px; left:75px;}
+#contei > .number ul li{ color:#333; float:left; margin:5px 15px;}
+#contei > .number input{ width:120px; height:38px; font-size:30px; background:#8c8c8c; border:1px solid #333;}
+#contei > .three > .rmain > .right{ width:485px; height:353px; float:left; margin-left:5px;}
+#contei > .three > .rmain > .right > .option{ width:100%; height:245px;}
+#contei > .three > .rmain > .right > .option p span{ font-size:16px; padding-left:0.5%;}
+.right .yes{ width:100%; height:93px; background:#cccccc; border:1px solid #999; margin-top:12px;}
+.right .yes ul li{ float:left;}
+.right .yes input[type=submit]{ width:100px; height:34px; font-size:18px; margin:6px 25px; background:#cccccc; border:1px solid #999;}
+#money{ font-size:34px; width:210px; height:75px; margin:0px; margin-top:10px;}
+.right .yes input[type=button]{ width:100px; height:34px; font-size:18px; margin:6px 25px; background:#cccccc; border:1px solid #999;cursor:pointer;}
+#money{ font-size:34px; width:210px; height:75px; margin:0px; margin-top:10px;cursor:pointer;}
+.right .yes input[type=checkbox]{ margin:10px;}
+.right .yes ul li a{ color:#000;}
+.right .yes ul li:nth-of-type(3){ margin-top:13px;}
+
+/*收银选项卡*/
+.option{ width:100%; height:345px; margin:0 auto;}
+.option .nav{ width:100%; height:30px; margin:0px; padding:0px; background:#CCC; list-style:none;  border-bottom:1px solid #999;}
+.option .nav li{ width:100px; height:30px; color:#000; font-size:20px; float:left; border-radius:5px;}
+.option .nav li a{ color:#000; margin-left:5px;cursor:pointer;}
+.on{ width:100px; height:30px; background:#8c8c8c; color:#333;}
+
+.cont{ width:100%; height:323px; padding:0px; list-style:none;}
+.cont li{width:100%; height:215px; color:#000; font-size:26px; background:#cccccc; display:none;}
+.cont li p{ width:100%; height:90px;}
+.cont li p img{ margin-top:10px;box-sizing: border-box;width:60px;height:60px;cursor:pointer;}
+.cont a{ margin-left:20px;}
+.active{ display:block !important;}
+.active input{ width:260px; height:37px; margin:50px 10px; padding-left:7px; background:#cccccc;  border:1px solid #333;}
+.active li a{ height:40px; color:#000; font-size:36px;}
+.active li span input{ width:250px; height:25px;}
+.cont li h4{ color:#333; font-size:16px; font-family:"微软雅黑"; margin-left:30px; letter-spacing:1px;}
+
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+::-webkit-scrollbar  
+{  
+    width: 10px;  
+    height: 10px;  
+    background-color: #8cd121;  
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+::-webkit-scrollbar-track  
+{  
+    -webkit-box-shadow: inset 0 0 6px #8cd121;  
+    background-color: #8cd121;  
+}  
+  
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb  
+{  
+    -webkit-box-shadow: inset 0 0 6px #8cd121;  
+    background-color: #8cd121;  
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

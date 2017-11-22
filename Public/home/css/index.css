@@ -1,0 +1,54 @@
+/* CSS Document */
+*{ color:#FFF; padding:0px; margin:0px; text-decoration:none;list-style:none;}
+.top{ width:100%; height:95px; background:#8cd121;}
+.top .logo{ width:200px; height:95px; margin-left:2%; float:left;}
+.top .name{ width:700px; height:90px; float:left; }
+.top .name p{ color:#FFF;}
+.option{ width:100%;}
+.option .left{ width:18%; height:600px; background:#8cd121; float:left;}
+.option .left{clear:both;}
+.option .left ul li{ list-style:none; height:40px;}
+.option .left ul li:hover{ background:#7dac35;}
+.option .left ul li p{ color:#FFF; font-size:20px; margin-left:6%; line-height:50px; letter-spacing:2px;}
+.option .left ul li p img{
+	float:left;
+	margin-top:12px;
+	width:28px;
+	height:23px;
+	margin-right:2%;	
+}
+.option .right{ width:82%; background:#CCC; height:600px; float:left;}
+.option .right iframe{ width:100%; height:100%;}
+.cle{ clear:both;}
+/*瀹氫箟婊氬姩鏉￠珮瀹藉強鑳屾櫙 楂樺鍒嗗埆瀵瑰簲妯珫婊氬姩鏉＄殑灏哄*/  
+::-webkit-scrollbar  
+{  
+    width: 10px;  
+    height: 10px;  
+    background-color: #8cd121;  
+}  
+  
+/*瀹氫箟婊氬姩鏉¤建閬�鍐呴槾褰�鍦嗚*/  
+::-webkit-scrollbar-track  
+{  
+    -webkit-box-shadow: inset 0 0 6px #8cd121;  
+    background-color: #8cd121;  
+}  
+  
+/*瀹氫箟婊戝潡 鍐呴槾褰�鍦嗚*/  
+::-webkit-scrollbar-thumb  
+{  
+    -webkit-box-shadow: inset 0 0 6px #8cd121;  
+    background-color: #8cd121;  
+}  
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>修改数量窗口</title>
+<link rel="stylesheet" type="text/css" href="__STYLE__/css/purchase.css">
+</head>
+
+<body>
+ <div class="main">
+   <div class="top">     
+   </div>
+   <form action="__URL__/updategoods/gid/{$data.gid}" method="post">
+        修改数量为: <input type="text" name='num' value="{$data['num']}" /><br>
+     <input type="submit" value="确认修改"/>
+     <a href="{:U('index')}">返回</a>
+   </form>
+ </div>
+</body>
+</html>

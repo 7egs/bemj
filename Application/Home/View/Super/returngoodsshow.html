@@ -1,0 +1,22 @@
+	         <table width="600" height="80" border="0">
+	            <tr>
+	              <th width="151" scope="col">条码</th>
+	              <th width="42" scope="col">数量</th>
+	              <th width="80" scope="col">名称</th>
+	              <th width="176" scope="col">时间</th>
+	              <th width="53" scope="col">金额</th>
+	              <th width="75" scope="col">操作</th>
+	            </tr>
+	            <volist name='good' id='arr'>
+				    <tr>
+				      <td>{$arr['gid']}</td>
+				      <td>{$arr['num']}</td>
+				      <td>{$arr['gname']}</td>
+				      <td>{$arr['date']|date='Y-m-d H:i:s',###}</td>
+				      <td>{$arr['gsale']*$arr['num']*$arr['discount']}</td>
+				      <td style = "text-align:center;"><a href="__URL__/returngoods/gid/{$arr['gid']}">退货</a></td>
+				    </tr>
+		 		</volist>
+	         </table>  
+         
+        

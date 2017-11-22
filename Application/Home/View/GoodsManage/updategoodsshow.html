@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>进价售价窗口</title>
+<link rel="stylesheet" type="text/css" href="__STYLE__/css/purchase.css">
+</head>
+<body>
+ <div class="main" style="width: 700px;height: 370px;"> 
+   <div class="top">
+     <span>修改商品信息</span> 
+     <a href="javascript:history.back(-1)" style="float: right;cursor: pointer;margin-right: 10px;margin-top: 4px;color: #333333;">X<a>
+   </div>
+   <form action='__URL__/updategoods/goodsgid/{$goodsgid}' method="post" style="width: 700px;height: 320px;font-size: 14px;">
+     	商品条形码: <input type="text" value="{$goodsgid}" disabled style="width: 30%;margin-top: 5px;">
+     	商品名称：<input type='text' name="gname" value="{$list.gname}" style="width: 30%;margin-top: 5px;"></br>
+     	商品售价：<input type='text' name="gsale" value='{$list.gsale}' style="width: 30%;margin-top: 5px;margin-left: 34px;">
+     	商品进价：<input type='text' name="gbid" value='{$list.gbid}' style="width: 30%;margin-top: 5px;"></br>
+     	商品库存：<input type='text' name="gnum" value='{$list.gnum}' style="margin-left: 34px;width: 30%;margin-top: 5px;">
+     	<spana style = "display: none;">
+     	商品状态：
+		<if condition="$list['state'] eq '0'">
+		<input type='radio' value='1' name='state' style="margin-top: 5px;"/>禁用
+		<input type='radio' value='0' checked name='state' style="margin-top: 5px;"/>允许
+		<else/>
+		<input type='radio' value='1' checked name='state' style="margin-top: 5px;"/>禁用
+		<input type='radio' value='0' name='state'  style="margin-top: 5px;"/>允许          
+		</if>
+		</spana>
+     	商品规格：<input type='text' name="guige" value='{$list.guige}' style="width: 30%;margin-top: 5px;"></br>
+     	商品单位：<input type='text' name="unit" value='{$list.unit}' style="margin-left: 34px;width: 30%;margin-top: 5px;">
+     	保质期：<input type='text' name="quality" value='{$list.quality}' style="margin-left: 34px;width: 30%;margin-top: 5px;"></br>
+     	生产日期：<input type='text' name="production" value='{$list.production}' style="margin-left: 34px;width: 30%;margin-top: 5px;">
+     	分类：<select name="goodsfenlei" style="width: 80px;height: 31px;margin-left: 15px;">
+	            <volist name='list3' id='vol'>
+	            <option value='{$vol.id}'>{$vol.fenlei_name}</option>
+	            </volist>
+            </select>
+     	供应商：<select name='goodssupplier' style="width: 100px;height: 31px;margin-left: 10px;">
+              <volist name='list2' id='vol'>
+	              <if condition="$vol['status'] eq '1'">
+	              <option value="{$vol['id']}">{$vol['supplier_name']}</option>
+	              </if>
+	           </volist>
+              </select>
+              </br>
+        <spana style = "display: none;">      
+     	是否积分产品：
+     	<if condition="$list['integration'] eq '0'">
+		<input type='radio' value='1' name='integration'/>禁用
+		<input type='radio' value='0' checked name='integration'/>允许
+		<else/>
+		<input type='radio' value='1' checked name='integration'/>禁用
+		<input type='radio' value='0' name='integration'  />允许          
+		</if>
+     	是否使用余额/积分：
+     	<if condition="$list['user_member'] eq '0'">
+		<input type='radio' value='1' name='user_member'/>禁用
+		<input type='radio' value='0' checked name='user_member'/>允许
+		<else/>
+		<input type='radio' value='1' checked name='user_member'/>禁用
+		<input type='radio' value='0' name='user_member'  />允许          
+		</if>
+     	是否使用会员打折：
+     	<if condition="$list['sale'] eq '0'">
+		<input type='radio' value='1' name='sale'/>禁用
+		<input type='radio' value='0' checked name='sale'/>允许
+		<else/>
+		<input type='radio' value='1' checked name='sale'/>禁用
+		<input type='radio' value='0' name='sale'  />允许          
+		</if>
+		</spana>
+     	关联商品条码：      <input type='text' name="correlation_gid" value="{$list['correlation_gid']}" style="width: 30%;margin-top: 20px;">
+     	关联个数：        <input type='text' name="correlation_num" value="{$list['correlation_num']}" style="width: 30%;margin-top: 20px;">
+     <input type="submit" value="确 定" style="width: 200px;height: 50px;background: #8cd121;color: #ffffff;" />
+   </form>
+ </div>
+</body>
+</html>

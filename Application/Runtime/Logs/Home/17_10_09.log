@@ -1,0 +1,40 @@
+[ 2017-10-09T16:06:05+08:00 ] 127.0.0.1 /bmej/index.php?s=/Home/GoodsManage/goodsmessageajax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user_goods` [ RunTime:0.0490s ]
+SQL: SELECT * FROM `user_goods` WHERE `gid` = '123123' AND `boss_classify` = '18328710832' LIMIT 1   [ RunTime:0.0450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-09T16:06:24+08:00 ] 127.0.0.1 /bmej/index.php?s=/Home/GoodsManage/goodsmessageajax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user_goods` [ RunTime:0.0460s ]
+SQL: SELECT * FROM `user_goods` WHERE `gid` = '123' AND `boss_classify` = '18328710832' LIMIT 1   [ RunTime:0.0480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-09T17:05:46+08:00 ] 127.0.0.1 /bmej/index.php?s=/Home/GoodsManage/goodsmessageajax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user_goods` [ RunTime:0.0470s ]
+SQL: SELECT * FROM `user_goods` WHERE `gid` = '213' AND `boss_classify` = '18328710832' LIMIT 1   [ RunTime:0.0460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-09T17:06:51+08:00 ] 127.0.0.1 /bmej/index.php?s=/Home/GoodsManage/goodsmessageajax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user_goods` [ RunTime:0.0468s ]
+SQL: SELECT * FROM `user_goods` WHERE `gid` = '213' AND `boss_classify` = '18328710832' LIMIT 1   [ RunTime:0.0706s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

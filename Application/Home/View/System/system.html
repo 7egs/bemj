@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>店铺设置</title>
+<link rel="stylesheet" type="text/css" href="__STYLE__/css/system_store_settings.css">
+<script src="__STYLE__/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript"> 
+function del(){ 
+if(!confirm("这个对管理十分重要，请再次确认")){ 
+window.event.returnValue = false; } } 
+</script> 
+</head>
+<body>
+<div class="w">
+<div class="button">
+<button id="shop" class="cl">店铺修改申请</button>
+<button id="worker">员工管理</button>
+</div>
+<div class="shop_set">
+<form method="post" action='{:U("System/system")}'>
+店铺名称：<input id="aa" type="text" disabled="disabled" value="<?php echo $_COOKIE['classify'];?>"><span>如要修改，请联系系统客户</span><br />
+负责人电话：<input type="text" disabled="disabled" value="<?php echo $_SESSION['boss_classify'];?>"><span>如要修改，请联系系统客户</span><br />
+店面电话：<input id="bb" type="text" name="shop_phone" placeholder="请输入店面电话" value="<?php echo $_COOKIE['shop_phone'];?>"><span>可选填，小票打印显示</span><br />
+服务热线：<input id="cc" type="text" name="hot_phone" placeholder="请输入电话号码" value="<?php echo $_COOKIE['hot_phone'];?>"><br />
+店铺地址：<input id="dd" type="text" name="address" placeholder="请输入店铺地址" value="<?php echo $_COOKIE['address'];?>"><br />
+<input type="submit" value="确认提交申请" class="a">
+</form>
+</div>
+<div class="worker_manage">
+<div class="rigth">
+<!--<input readonly="readonly" placeholder="1" class="readonly"><button onclick="" class="f">上一页</button><button onclick="" class="f">下一页</button>-->
+</div>
+<table style="cellspacing 0">
+	<tr><td>ID</td>
+		<td>手机号</td>
+		<td>姓名</td>
+		<td>底薪</td>
+		<td>性别</td>
+		<td>是否启用</td>
+		<td>注册时间</td>
+		<td>身份证号</td>
+		<td>地址</td>
+		<td>操作</td>
+	</tr>
+    <volist name="list" id="vo">
+    <tr><td>{$vo.id}</td>
+        <td>{$vo.username}</td>
+        <td>{$vo.home_name}</td>
+        <td>{$vo.base_pay}</td>
+        <td>{$vo.sex}</td>
+        <td>{$vo.status}</td>
+        <td>{$vo.start_time|date='Y-m-d',###}</td>
+        <td>{$vo.identification}</td>
+        <td>{$vo.address}</td>
+        <td><a href="__URL__/modify/username/{$vo.username}">权限</a> / <a href="__URL__/del/username/{$vo.username}" onclick="return del()">删除</a></td>
+    </tr>
+    </volist>            
+</table>
+<a class="add"  href="{:U('System/add')}" style = "color:#333333">新增员工</a>
+</div>
+</div>
+</body>
+</html>
+<script>
+$().ready(function(){
+$("#shop").click(function(){
+$("#shop").addClass('cl');
+$("#worker").removeClass();
+$(".shop_set").show();
+$(".worker_manage").hide();
+})
+$("#worker").click(function(){
+$("#worker").addClass('cl');
+$("#shop").removeClass();
+$(".shop_set").hide();
+$(".worker_manage").show();
+})
+})
+//$("#add").click(function(){
+//	$('.addmessage').show();
+//});
+</script>

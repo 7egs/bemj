@@ -1,0 +1,73 @@
+[ 2017-10-08T11:06:12+08:00 ] 127.0.0.1 /bmej/index.php?s=/Home/GoodsManage/goodsmessageajax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user_goods` [ RunTime:0.0460s ]
+SQL: SELECT * FROM `user_goods` WHERE `gid` = 'qweqwe' AND `boss_classify` = '18328710832' LIMIT 1   [ RunTime:0.0470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-08T11:06:41+08:00 ] 127.0.0.1 /bmej/index.php?s=/Home/GoodsManage/goodsmessageajax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user_goods` [ RunTime:0.0460s ]
+SQL: SELECT * FROM `user_goods` WHERE `gid` = '22134' AND `boss_classify` = '18328710832' LIMIT 1   [ RunTime:0.0460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-08T11:06:55+08:00 ] 127.0.0.1 /bmej/index.php?s=/Home/GoodsManage/goodsmessageajax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user_goods` [ RunTime:0.0470s ]
+SQL: SELECT * FROM `user_goods` WHERE `gid` = '21421' AND `boss_classify` = '18328710832' LIMIT 1   [ RunTime:0.0490s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-08T11:16:29+08:00 ] 127.0.0.1 /bmej/index.php?s=/Home/GoodsManage/goodsmessageajax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user_goods` [ RunTime:0.0528s ]
+SQL: SELECT * FROM `user_goods` WHERE `gid` = '23424' AND `boss_classify` = '18328710832' LIMIT 1   [ RunTime:0.0538s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-08T11:23:29+08:00 ] 127.0.0.1 /bmej/index.php?s=/Home/GoodsManage/goodsmessageajax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user_goods` [ RunTime:0.0396s ]
+SQL: SELECT * FROM `user_goods` WHERE `gid` = '2131' AND `boss_classify` = '18328710832' LIMIT 1   [ RunTime:0.0468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-08T11:23:49+08:00 ] 127.0.0.1 /bmej/index.php?s=/Home/GoodsManage/goodsmessageajax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user_goods` [ RunTime:0.0306s ]
+SQL: SELECT * FROM `user_goods` WHERE `gid` = '1231' AND `boss_classify` = '18328710832' LIMIT 1   [ RunTime:0.0468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2017-10-08T11:24:29+08:00 ] 127.0.0.1 /bmej/index.php?s=/Home/GoodsManage/goodsmessageajax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user_goods` [ RunTime:0.0468s ]
+SQL: SELECT * FROM `user_goods` WHERE `gid` = '2131' AND `boss_classify` = '18328710832' LIMIT 1   [ RunTime:0.0616s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-08T15:06:13+08:00 ] 127.0.0.1 /bmej/index.php?s=/Home/Super/payorder/oways/1/total/13212/totalnum/1/membername/
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '15074463737657' for key 'PRIMARY'
+

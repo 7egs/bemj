@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>进价售价窗口</title>
+<link rel="stylesheet" type="text/css" href="__STYLE__/css/purchase.css">
+</head>
+<body>
+ <div class="main" style = "height:170px;">
+   <div class="top">
+     <span>修改会员级别<a href='{:U("Member/member")}' style = "float:right;margin-right:5px;">X</a></span> 
+   </div>
+   <form action='__URL__/updatemembertype/memberphone/{$memberphone}' method="post">
+      会员级别: <td><select name="membertype" style = "width:100px;height:30px;">
+	              <option value="0">请选择</option>
+              <volist name="list" id="arr">   
+                  <option value="{$arr.id}">{$arr.type_name}</option>
+              </volist>           
+                  </select>
+              </td>
+     <input type="submit" value="确 定"/>
+   </form>
+ </div>
+</body>
+</html>

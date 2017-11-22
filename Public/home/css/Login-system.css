@@ -1,0 +1,48 @@
+/* CSS Document */
+body,p,h1,h2,h3,h4,h5,h6{ color:#FFF; font-family:"4123 方正准圆 GBK"; padding:0px; margin:0px;}
+a{ text-decoration:none;}
+ul,li{ padding:0px; margin:0px;}
+
+.main{ width:100%; height:700px;}
+.main .top{ width:100%; height:80px; background:#8cd121;}
+.main .center{ width:100%; height:100%; background:#dcdddd;}
+.main .center .cleft{ width:700px; height:100%; float:left;}
+.main .center .cleft img{ margin:120px 100px;}
+.main .center .cright{ width:640px; height:100%; float:right;}
+.main .center .cright .system{ width:430px; height:400px; background:#FFF; margin:150px 100px;}
+.main .center .cright .system .sytop{ width:92%; height:70px; border-bottom:2px solid #CCC; margin:0 auto;}
+.main .center .cright .system .sytop p{ color:#8cd121; font-size:36px; text-align:center; line-height:70px; letter-spacing:10px;}
+.main .center .cright .system .number{ width:100%; height:150px;}
+.main .center .cright .system .number p{ color:#000; margin:40px 45px;}
+.main .center .cright .system .number p input{ width:260px; height:28px; border:2px solid #000; margin-left:15px; padding-left:5px;}
+.main .center .cright .system .Reg{ width:200px; height:40px; float:left;}
+.main .center .cright .system .Reg a{ color:#666; font-size:16px; margin-left:50px; line-height:40px;}
+.main .center .cright .system .Reg a:hover{ color:#8cd121;}
+.main .center .cright .system .Ret{ width:200px; height:40px; float:right;}
+.main .center .cright .system .Ret a{ color:#666; font-size:16px; margin-left:80px; line-height:40px;}
+.main .center .cright .system .Ret a:hover{ color:#8cd121;}
+.main .center .cright .system  button{ color:#FFF; font-size:24px; width:225px; height:50px; background:#8cd121; border:0px; margin:15px 110px; border-radius:12px; letter-spacing:1px;}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+::-webkit-scrollbar  
+{  
+    width: 10px;  
+    height: 10px;  
+    background-color: #8cd121;  
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+::-webkit-scrollbar-track  
+{  
+    -webkit-box-shadow: inset 0 0 6px #8cd121;  
+    background-color: #8cd121;  
+}  
+  
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb  
+{  
+    -webkit-box-shadow: inset 0 0 6px #8cd121;  
+    background-color: #8cd121;  
+}  
+
+
